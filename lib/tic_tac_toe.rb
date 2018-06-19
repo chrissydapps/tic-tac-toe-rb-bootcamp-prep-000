@@ -56,7 +56,8 @@ def turn_count(board)
     if cell == "X" || cell == "O"
       number_of_turns += 1
     end
-  } number_of_turns
+  end
+  number_of_turns
 end
 
 def current_player(board)
