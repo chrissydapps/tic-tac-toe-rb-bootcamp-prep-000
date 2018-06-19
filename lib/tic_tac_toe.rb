@@ -50,7 +50,8 @@ def turn(board)
   end
 end
 
-def turn_count()
+def turn_count(board)
+  
 end
 
 def won?(board)
