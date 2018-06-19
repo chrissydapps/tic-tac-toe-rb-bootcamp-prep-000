@@ -62,18 +62,17 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? {|token| token == "X"||token == "O"} ? true : false
+  board.all? {|token| token == "X"||token == "O"} 
 end
 
 def draw?(board)
-  !won?(board) && full?(board) ? true : false
+  !won?(board) && full?(board)
 end
 
 def over?(board)
-  won?(board).is_a?(Array) || draw?(board) || full?(board) ? true : false
+  won?(board).is_a?(Array) || draw?(board) || full?(board)
 end
 
 def winner(board)
   won?(board).class != Array ? nil : board[won?(board)[0]]
 end
-
