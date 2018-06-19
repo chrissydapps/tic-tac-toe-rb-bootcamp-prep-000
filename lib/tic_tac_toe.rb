@@ -23,7 +23,6 @@ end
 
 def move(board, index, player)
   board[index] = player
-  puts "#{display_board(board)}"
 end
 
 def position_taken?(board, index)
