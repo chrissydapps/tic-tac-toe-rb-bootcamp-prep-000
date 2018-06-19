@@ -50,6 +50,9 @@ def turn(board)
   end
 end
 
+def turn_count()
+end
+
 def won?(board)
   WIN_COMBINATIONS.detect do |position|
     if board[position[0]] == "X" && board[position[1]] == "X" && board[position[2]] == "X"
