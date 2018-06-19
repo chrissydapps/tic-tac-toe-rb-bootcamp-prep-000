@@ -91,3 +91,7 @@ end
 def winner(board)
   won?(board).class != Array ? nil : board[won?(board)[0]]
 end
+
+def play(board)
+  until over?(board)
+    turn(board)
